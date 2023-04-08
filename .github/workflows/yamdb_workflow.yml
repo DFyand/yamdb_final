@@ -43,7 +43,7 @@ jobs:
         uses: docker/build-push-action@v2 
         with:
           push: true
-          tags: dfyand/123:latest 
+          tags: dfyand/123:v1 
 
   deploy:
     runs-on: ubuntu-latest
