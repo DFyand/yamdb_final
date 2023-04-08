@@ -39,11 +39,6 @@ jobs:
         with:
           username: ${{ secrets.user }}
           password: ${{ secrets.password }}
-      - name: Push to Docker Hub
-        uses: docker/build-push-action@v2 
-        with:
-          push: true
-          tags: dfyand/123:latest 
 
   deploy:
     runs-on: ubuntu-latest
